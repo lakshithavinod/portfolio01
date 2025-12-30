@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Github, Linkedin, Facebook, Instagram, Mail, Phone } from 'lucide-react';
+import profilePic from '../../image1.jpeg';
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -67,6 +68,10 @@ const Hero = () => {
               <span>0762075906</span>
             </a>
           </div>
+        </div>
+
+        <div className="hero-image">
+          <img src={profilePic} alt="Lakshitha Vinod" className="profile-pic" />
         </div>
 
         <div className="hero-social">
