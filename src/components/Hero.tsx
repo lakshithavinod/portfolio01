@@ -42,16 +42,12 @@ const Hero = () => {
         <div className="hero-text">
           <h1 ref={textRef} className="hero-title"></h1>
           <p className="hero-subtitle">
-            Full Stack Developer & Creative Problem Solver
-          </p>
-          <p className="hero-description">
-            Passionate about crafting elegant solutions and building
-            impactful digital experiences that make a difference.
+            Undergraduate in Biomedical Technology
           </p>
 
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={scrollToContact}>
-              Get in Touch
+              Contact with Me
             </button>
             <a href="#projects" className="btn btn-secondary">
               View My Work
@@ -75,7 +71,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-social">
-          <a href="#" className="social-link" aria-label="Facebook">
+          <a href="https://m.facebook.com/profile.php?id=61560126956619" className="social-link" aria-label="Facebook">
             <Facebook size={20} />
           </a>
           <a href="#" className="social-link" aria-label="LinkedIn">
