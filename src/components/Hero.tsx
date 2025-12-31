@@ -74,7 +74,7 @@ const Hero = () => {
           <a href="https://m.facebook.com/profile.php?id=61560126956619" className="social-link" aria-label="Facebook">
             <Facebook size={20} />
           </a>
-          <a href="#" className="social-link" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/lakshitha-vinod-3b598138a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="social-link" aria-label="LinkedIn">
             <Linkedin size={20} />
           </a>
           <a href="#" className="social-link" aria-label="Instagram">
