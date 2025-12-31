@@ -4,9 +4,9 @@ const Education = () => {
   const educationData = [
     {
       icon: <GraduationCap size={24} />,
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University Name',
-      year: '2020 - 2024',
+      degree: 'Bachelor of Health Science Honours in Biomedical Technology',
+      institution: 'Gampaha Wickramarachchi University of Indigenous Medicine',
+      year: '2023 - Present',
       description: 'Focused on software engineering, algorithms, and web development.',
     },
     {
