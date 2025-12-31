@@ -181,7 +181,7 @@ const Contact = () => {
       </div>
 
       <footer className="footer">
-        <p>&copy; 2024 Lakshitha Vinod. All rights reserved.</p>
+        <p>LAKSHITHA VINOD</p>
       </footer>
     </section>
   );
