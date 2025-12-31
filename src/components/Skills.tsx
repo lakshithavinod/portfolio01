@@ -9,7 +9,7 @@ const Skills = () => {
     { name: 'Graphic Design', level: 80 },
     { name: 'HTML & CSS', level: 95 },
     { name: 'Python', level: 75 },
-    { name: 'Computer Hardware', level: 70 },
+    { name: 'Microsoft Office', level: 70 },
   ];
 
   const languages = [
