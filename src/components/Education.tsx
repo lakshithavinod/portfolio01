@@ -7,14 +7,14 @@ const Education = () => {
       degree: 'Bachelor of Health Science Honours in Biomedical Technology',
       institution: 'Gampaha Wickramarachchi University of Indigenous Medicine',
       year: '2023 - Present',
-      description: 'Focused on software engineering, algorithms, and web development.',
+      description: 'Focused on Medical Instrumentation and Web Development.',
     },
     {
       icon: <Award size={24} />,
       degree: 'Advanced Level',
-      institution: 'School Name',
-      year: '2018 - 2020',
-      description: 'Mathematics, Physics, and Information Technology stream.',
+      institution: 'K/Theldeniya National School',
+      year: '2020 - 2022',
+      description: 'Science for Technology, Engineering Technology, Agri Science in Technology Stream.',
     },
     {
       icon: <BookOpen size={24} />,

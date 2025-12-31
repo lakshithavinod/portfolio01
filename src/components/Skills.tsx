@@ -5,14 +5,11 @@ const Skills = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   const technicalSkills = [
-    { name: 'JavaScript / TypeScript', level: 90 },
-    { name: 'React & Next.js', level: 85 },
-    { name: 'Node.js & Express', level: 80 },
+    { name: 'Computer Hardware', level: 90 },
+    { name: 'Graphic Design', level: 80 },
     { name: 'HTML & CSS', level: 95 },
     { name: 'Python', level: 75 },
-    { name: 'SQL & NoSQL', level: 80 },
-    { name: 'Git & Version Control', level: 85 },
-    { name: 'UI/UX Design', level: 70 },
+    { name: 'Computer Hardware', level: 70 },
   ];
 
   const languages = [
