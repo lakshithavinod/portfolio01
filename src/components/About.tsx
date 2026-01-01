@@ -35,18 +35,12 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="about-paragraph">
-              I'm a passionate developer who loves turning ideas into reality through code.
-              With a strong foundation in web development and a keen eye for design,
-              I create digital experiences that are not only functional but also beautiful.
+              I am a dedicated Full Stack Developer with a passion for building innovative web applications.
+              My journey in software development has equipped me with a diverse skill set and a problem-solving mindset.
             </p>
             <p className="about-paragraph">
-              My journey in technology is driven by curiosity and a desire to make an impact.
-              I believe in continuous learning, clean code, and the power of collaboration
-              to build something truly remarkable.
-            </p>
-            <p className="about-paragraph">
-              When I'm not coding, you'll find me exploring new technologies, contributing
-              to open-source projects, or brainstorming the next big idea.
+              I thrive on challenges and am constantly learning new technologies to stay at the forefront of the industry.
+              My goal is to create impactful digital experiences that make a difference.
             </p>
           </div>
 
