@@ -51,7 +51,7 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, url: '#', label: 'Facebook' },
+    { icon: <Facebook size={20} />, url: 'https://m.facebook.com/profile.php?id=61560126956619', label: 'Facebook' },
     { icon: <Linkedin size={20} />, url: '#', label: 'LinkedIn' },
     { icon: <Instagram size={20} />, url: '#', label: 'Instagram' },
     { icon: <Github size={20} />, url: '#', label: 'GitHub' },
