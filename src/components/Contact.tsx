@@ -52,7 +52,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: <Facebook size={20} />, url: 'https://m.facebook.com/profile.php?id=61560126956619', label: 'Facebook' },
-    { icon: <Linkedin size={20} />, url: '#', label: 'LinkedIn' },
+    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/lakshitha-vinod-3b598138a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn' },
     { icon: <Instagram size={20} />, url: '#', label: 'Instagram' },
     { icon: <Github size={20} />, url: '#', label: 'GitHub' },
   ];
