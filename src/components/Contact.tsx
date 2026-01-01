@@ -22,7 +22,8 @@ const Contact = () => {
     e.preventDefault();
 
     // Build a message from the form fields and open WhatsApp Web (or app)
-    const phone = '0762075906';
+    // Use international format (country code +94) without plus sign for wa.me
+    const phone = '94762075906';
     const text = `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 
