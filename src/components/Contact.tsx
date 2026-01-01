@@ -34,9 +34,22 @@ const Contact = () => {
     const mailUrl = `mailto:${mailTo}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
 
     // Open mail client and WhatsApp in new tabs/windows so user can confirm/send
-    window.open(mailUrl, '_blank');
-    window.open(url, '_blank');
+    // Create temporary anchors and click them synchronously to avoid popup blocking
+    const openLink = (href: string) => {
+      const a = document.createElement('a');
+      a.href = href;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
 
+    openLink(mailUrl);
+    openLink(url);
+
+    // Give quick visual feedback in the UI and clear the form
     setStatus('success');
     setFormData({ name: '', email: '', subject: '', message: '' });
     setTimeout(() => setStatus(''), 3000);
@@ -59,7 +72,7 @@ const Contact = () => {
       icon: <MapPin size={24} />,
       title: 'Location',
       value: 'Sri Lanka',
-      link: '#',
+      link: 'https://maps.app.goo.gl/ZX8q6DTTA582Z7cq6?g_st=aw',
     },
   ];
 
