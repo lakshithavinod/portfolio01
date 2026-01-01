@@ -21,16 +21,22 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Build a mailto link addressed to lakshithavinod25@gmail.com with subject and body
-    const to = 'lakshithavinod25@gmail.com';
-    const subject = formData.subject || 'Contact from website';
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`;
-    const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // Build a message from the form fields and open WhatsApp Web (or app)
+    // Use international format (country code +94) without plus sign for wa.me
+    const phone = '94762075906';
+    const text = `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 
-    // Open the user's default mail client to send the message
-    window.location.href = mailto;
+    // Also open the user's email client with the same content
+    const mailTo = 'lakshithavinod25@gmail.com';
+    const mailSubject = formData.subject || 'New message from contact form';
+    const mailBody = `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`;
+    const mailUrl = `mailto:${mailTo}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
 
-    // Quick UI feedback and clear the form
+    // Open mail client and WhatsApp in new tabs/windows so user can confirm/send
+    window.open(mailUrl, '_blank');
+    window.open(url, '_blank');
+
     setStatus('success');
     setFormData({ name: '', email: '', subject: '', message: '' });
     setTimeout(() => setStatus(''), 3000);
