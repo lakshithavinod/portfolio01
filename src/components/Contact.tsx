@@ -20,13 +20,19 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('sending');
 
-    setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setStatus(''), 3000);
-    }, 1000);
+    // Build a message from the form fields and open WhatsApp Web (or app)
+    const phone = '0762075906';
+    const text = `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    // Open in a new tab/window so the user can confirm/send in WhatsApp
+    window.open(url, '_blank');
+
+    // Give quick visual feedback in the UI and clear the form
+    setStatus('success');
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    setTimeout(() => setStatus(''), 3000);
   };
 
   const contactInfo = [
