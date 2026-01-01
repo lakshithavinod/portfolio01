@@ -21,16 +21,16 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Build a message from the form fields and open WhatsApp Web (or app)
-    // Use international format (country code +94) without plus sign for wa.me
-    const phone = '94762075906';
-    const text = `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    // Build a mailto link addressed to lakshithavinod25@gmail.com with subject and body
+    const to = 'lakshithavinod25@gmail.com';
+    const subject = formData.subject || 'Contact from website';
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`;
+    const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    // Open in a new tab/window so the user can confirm/send in WhatsApp
-    window.open(url, '_blank');
+    // Open the user's default mail client to send the message
+    window.location.href = mailto;
 
-    // Give quick visual feedback in the UI and clear the form
+    // Quick UI feedback and clear the form
     setStatus('success');
     setFormData({ name: '', email: '', subject: '', message: '' });
     setTimeout(() => setStatus(''), 3000);
